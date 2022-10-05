@@ -21,6 +21,7 @@ fs.writeFile('./docs/blog2.txt', 'hello, again', () => {
 });
 
 // directories
+// return error if the dir is exist before => handle this error
 if (!fs.existsSync('./assets')) {
   fs.mkdir('./assets', err => {
     if (err) {

@@ -11,6 +11,7 @@ fs.readFile('./docs/blog.txt', (err, data) => {
 // console.log('last line');
 
 // writing files
+//replaces the specified file and content if it exists. If the file does not exist, a new file, containing the specified content, will be created
 fs.writeFile('./docs/blog.txt', 'hello, world', () => {
   console.log('file was written');
 });

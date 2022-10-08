@@ -1,5 +1,5 @@
 //streams object allow to you to (read / write) using data before it has finished loading .
-// data deliverd in chunck of data , package in buffer ,it move to the user when buffer fill in chunck 
+// data deliverd in chunck of data , package in buffer ,it move to the user when buffer fill in chunk 
 // we using streams when we deal with larg and big files
 
 const fs = require('fs');
@@ -20,4 +20,5 @@ readStream.on('data', chunk => {
 });
 
 // piping
+//Piping is a mechanism where provide the output of one stream as the input to another stream. It is normally used to get data from one stream and to pass the output of that stream to another stream
 // readStream.pipe(writeStream);

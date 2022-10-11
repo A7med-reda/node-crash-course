@@ -12,6 +12,11 @@ const writeStream = fs.createWriteStream('./docs/blog4.txt');
 //every type of streams is eventemitter (send event)
 //streams have 4 event (data , end ,error ,finish)
 
+//  data − This event is fired when there is data is available to read.
+//  end − This event is fired when there is no more data to read.
+//  error − This event is fired when there is any error receiving or writing data.
+//  finish − This event is fired when all the data has been flushed to underlying system.
+
 readStream.on('data', chunk => {
   // console.log('---- NEW CHUNK ----');
   // console.log(chunk);

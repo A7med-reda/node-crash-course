@@ -1,3 +1,5 @@
+//you have to create Node.js server manually not unlike php have the apache server
+
 const http = require('http');
 
 const server = http.createServer((req, res) => {

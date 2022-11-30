@@ -61,8 +61,15 @@ const server = http.createServer((req, res) => {
     Redirection messages (300 – 399)  resource moved (redirects) 
     Client error responses (400 – 499)  404 not found
     Server error responses (500 – 599)
-
+  */
   
+  /* 
+  Redirect
+   The Location response header indicates the URL to redirect a page to   
+      In cases of redirection, the HTTP method used to make the new request(so we have to use-->res.end()) to fetch the page pointed to by Location depends on the original method and the kind of redirection:
+      303 (See Other) responses always lead to the use of a GET method.
+      307 (Temporary Redirect) and 308 (Permanent Redirect) don't change the method used in the original request.
+      301 (Moved Permanently) and 302 (Found) don't change the method most of the time, though older user-agents may (so you basically don't know).
   */
   switch(req.url) {
     case '/':

@@ -2,12 +2,15 @@
 <%- include("./partials/head.ejs") %>
 
 <body>
-/*
+   <!--
   <%  used t write pure js run on server not set to client || browser  
   <% that can contain logic (called a “scriptlet”). Any JavaScript syntax can be used in this tag.
   <%= to access obj in render() And render string to browser
-  
-*/
+  <%= “escape output” tag ==> if the string in the content has forbidden characters
+     like > and &, the characters will be escaped and output string.
+  <%- “unescaped output” tag, and is used when you want to output raw HTML
+  <%- Don’t use it with user input, because it can expose your application to attacks.
+   -->
 
   <%- include("./partials/nav.ejs") %>
 

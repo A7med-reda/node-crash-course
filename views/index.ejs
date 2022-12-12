@@ -10,6 +10,12 @@
      like > and &, the characters will be escaped and output string.
   <%- “unescaped output” tag, and is used when you want to output raw HTML
   <%- Don’t use it with user input, because it can expose your application to attacks.
+  
+   #partials template =>
+     parts of websites stay the same across different pages, like the header, footer, and sidebar. 
+     EJS provides us with partials that allow us to reuse views.
+     Recall that partials using the include('path') function.
+     It takes in the relative path to the file as an argument (./pa)
    -->
 
   <%- include("./partials/nav.ejs") %>

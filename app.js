@@ -16,12 +16,13 @@ app.set('view engine', 'ejs');
  - then serve /send them to client 
  - it render template from Views dirctory. we can edit app.set('views', )..
 */
-app.get('/', (req, res) => {
-  const blogs = [
+const blogs = [
     {title: 'Yoshi finds eggs', snippet: 'Lorem ipsum dolor sit amet consectetur'},
     {title: 'Mario finds stars', snippet: 'Lorem ipsum dolor sit amet consectetur'},
     {title: 'How to defeat bowser', snippet: 'Lorem ipsum dolor sit amet consectetur'},
   ];
+app.get('/', (req, res) => {
+  
   res.render('index', { title: 'Home', blogs });
 });
 

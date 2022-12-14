@@ -3,6 +3,12 @@ const morgan = require('morgan');
 
 // express app
 const app = express();
+/*
+ middleware don't run in sequntial(express think you senf res) so the next middleware(any code) will not run.
+ unless you fire next() 
+*/
+
+
 
 // listen for requests
 app.listen(3000);

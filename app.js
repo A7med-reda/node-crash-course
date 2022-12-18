@@ -20,7 +20,7 @@ app.set('view engine', 'ejs');
 express.static(root)
 a built-in middleware function in Express. 
 It serves static files(js css image)to browser(front-end)
-because server protect your static file from accsse from browser 
+because server protect your static file from accsse from browser(/style.css) 
 */
 // middleware & static files
 app.use(express.static('public'));

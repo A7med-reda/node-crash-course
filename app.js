@@ -37,9 +37,11 @@ app.get('/about-us', (req, res) => {
 // 404 page
 /*
   Use()-> is fire to every single (all) request coming and fire middleware if req didnt match any previous routs
-  [.get() ,.post ,.delete()].
-   so  the postion must be in bottom of routes to handle 404 
-  used to create middleware fun()and fire them.
+       [.get() ,.post ,.delete()].
+       so  the postion must be in bottom of routes to handle 404 
+       used to create middleware fun()and fire them.
+   *** Note:: app.use('path' , middleware)-> path is optional and it match req.url with the start(only) of path in use()
+       it didnt match all the path , despite App.All(path is mandatry , mw) and match it with req.URL  
 */
 app.use((req, res) => {
   res.status(404).sendFile('./views/404.html', { root: __dirname });

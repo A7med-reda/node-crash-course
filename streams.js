@@ -4,7 +4,7 @@
 
 const fs = require('fs');
 
-//there is 4 types of streams( deplux ,Transform)
+//there is 4 types of streams( Redable , Writable ,deplux ,Transform)
 
 const readStream = fs.createReadStream('./docs/blog3.txt', { encoding: 'utf8'});
 const writeStream = fs.createWriteStream('./docs/blog4.txt');

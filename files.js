@@ -20,6 +20,11 @@ fs.writeFile('./docs/blog2.txt', 'hello, again', () => {
   console.log('file was written');
 });
 
+
+//Appending to a File: The fs.appendFile() method is used to synchronously append the data to the file. Syntax:
+
+// fs.appendFile(filepath, data, options, callback);
+
 // directories
 // return error if the dir is exist before => handle this error
 if (!fs.existsSync('./assets')) {

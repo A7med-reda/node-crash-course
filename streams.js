@@ -1,7 +1,8 @@
 //streams object allow to you to (read / write) using data before it has finished loading .
 // data deliverd in chunck of data , package in buffer ,it move to the user when buffer fill in chunk 
 // we using streams when we deal with larg and big files
-
+//https://www.freecodecamp.org/news/node-js-streams-everything-you-need-to-know-c9141306be93/
+// in whatsApp
 const fs = require('fs');
 
 //there is 4 types of streams( Redable , Writable ,deplux ,Transform)

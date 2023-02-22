@@ -9,12 +9,20 @@
     <div class="content">
       <p><%= blog.body %></p>
     </div>
+          <!-- data -nameCustom variable to store data    -->
+
     <a class="delete" data-doc="<%= blog._id %>">delete</a>
   </div>
 
   <%- include("./partials/footer.ejs") %>
 
   <script>
+  // access to doc we want to delete 
+    // add event 'click'
+    // set the endpoint URl  we want to reach ..  get the id of doc we want to delete
+    // sending Req using fetchApi to  url -> endpoint 
+    //res from the server is json -> detailsRouter , convert to object and log it
+    // redirect from fronted  //data.redirect from json 
     const trashcan = document.querySelector('a.delete');
 
     trashcan.addEventListener('click', (e) => {

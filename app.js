@@ -73,9 +73,11 @@ app.get('/blogs/:id', (req, res) => {
     });
 });
 
+
+
 app.delete('/blogs/:id', (req, res) => {
   const id = req.params.id;
-  
+  // when we use Ajax req in Browser(fetch), we can't use res.redirect() instead use json or text
   Blog.findByIdAndDelete(id)
     .then(result => {
       res.json({ redirect: '/blogs' });

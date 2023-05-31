@@ -47,7 +47,10 @@ const server = http.createServer((req, res) => {
   
   
   // Routing
-// Way To Figure Out The URL User Request And Depend on Tjat URl Send Back Different HTMl  File    
+  //
+  // The process of handling requests in specific ways based on 
+  // the information provided within the request (Method - path) is known as routing
+//  Way To Figure Out The URL User Request And Depend on Tjat URl Send Back Different HTMl  File    
   
   //Folder Have All HTMl Files 
   let path = './views/';
